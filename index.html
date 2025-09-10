@@ -18,7 +18,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+
 </head>
 <body>
     <header>
@@ -48,22 +51,21 @@
     <!-- //parallax__nav -->
      <main id="parallax__cont">
         <section id="section1" class="parallax__item">
-            <img src="img/sh-uiux.svg" class="sh-uiux">
-            <img src="img/sh-p.svg" class="sh-p">
-            <img src="img/sh-cr.svg" class="sh-cr">
-            <img src="img/sh-g.svg" class="sh-g">
-            <img src="img/sh-b.svg" class="sh-b">
-            <img src="img/sh-design.svg" class="sh-design">
+            <div id="uiux" style="width: 150px; height: 44px;"></div>
+            <div id="flower" style="width: 93px; height: 93px;"></div>
+            <div id="creativity" style="width: 150px; height: 44px;"></div>
+            <div id="sh-g" style="width: 80px; height: 80px;"></div>
+            <div id="sh-b" style="width: 115px; height: 90px;"></div>
+            <div id="design-text" style="width: 104px; height: 46px;"></div>
             <div class="text">
-                <h2><span>지식</span>으로 채우고,</h2>
-                <img src="img/sh.svg" class="sh">
-                <h2><span>디자인</span>으로 증명하다</h2>
+                <div id="knowledge" style="width: 600px; height: 127px;"></div>
+                <div id="design-certificate" style="width:760px; height: 127px; margin-left: 46%;"></div>
             </div>
-            <img src="img/sh-sb.svg" class="sh-sb">
-            <img src="img/sh-o.svg" class="sh-o">
-            <img src="img/sh-y.svg" class="sh-y">
-            <img src="img/sh-web.svg" class="sh-web">
-            <img src="img/sh-l.svg" class="sh-l">
+            <div id="sh-sb" style="width: 130px; height: 130px;"></div>
+            <div id="sh-o" style="width: 71px; height: 75px;"></div>
+            <div id="sh-y" style="width: 63px; height: 63px;"></div>
+            <div id="webdesign" style="width: 141px; height: 45px;"></div>
+            <div id="sh-l" style="width: 153px; height: 119px;"></div>
             <figure class="parallax__item__imgWrap">
                 <div class="parallax__item__img"></div>
             </figure>
@@ -329,8 +331,8 @@
                                             <p>Adobe Photoshop, Adobe Illustrator, <br>Adobe XD, Swiper</p>
                                             <p>기획·디자인 100%</p>
                                             <p>
-                                                <a href="http://handpick.dothome.co.kr/main.html" target = "_blank">메인</a>
-                                                <a href="http://handpick.dothome.co.kr/sub.html" target = "_blank">시리즈</a>
+                                                <a href="http://gaeng1.dothome.co.kr/main.html" target = "_blank">메인</a>
+                                                <a href="http://gaeng1.dothome.co.kr/sub.html" target = "_blank">시리즈</a>
                                             </p>
                                         </div>
                                     </div>
@@ -1312,11 +1314,11 @@
                         <p>프로토타입</p>
                     </div>
                     <div class="link">
-                        <button class="link-btn" onclick="window.open('http://handpick.dothome.co.kr/main.html')"><img src="img/link.svg" alt="메인"></button>
+                        <button class="link-btn" onclick="window.open('http://gaeng1.dothome.co.kr/main.html')"><img src="img/link.svg" alt="메인"></button>
                         <p>메인</p>
                     </div>
                     <div class="link">
-                        <button class="link-btn" onclick="window.open('http://handpick.dothome.co.kr/sub.html')"><img src="img/link.svg" alt="서브"></button>
+                        <button class="link-btn" onclick="window.open('http://gaeng1.dothome.co.kr/sub.html')"><img src="img/link.svg" alt="서브"></button>
                         <p>시리즈</p>
                     </div>
                 </div>
@@ -1896,10 +1898,10 @@
         <!-- //section4 -->
 
         <section id="section5" class="parallax__item marquee-wrap">
-            <img src="img/sh-yg.svg" class="sh-yg">
-            <img src="img/sh-web1.svg" class="sh-web1">
-            <img src="img/sh-s-b.svg" class="sh-s-b">
-            <img src="img/sh-r.svg" class="sh-r">
+            <div id="star" style="width:102px; height:102px;"></div>
+            <div id="web-design1" style="width:156px; height:61px;"></div>
+            <div id="sh-s-b" style="width:96px; height:96px;"></div>
+            <div id="sh-r" style="width:86px; height:86px;"></div>
             <div class="section5-text">
             <h4>봐주셔서 감사합니다</h4>
             <h1>THANK YOU</h1>
@@ -1908,11 +1910,11 @@
                 <p>Email<span>xazcv@naver.com</span></p>
             </div>
             </div>
-            <img src="img/sh-s-y.svg" class="sh-s-y">
-            <img src="img/sh-email.svg" class="sh-email">
-            <img src="img/sh-c-p.svg" class="sh-c-p">
-            <img src="img/sh-ph.svg" class="sh-ph">
-            <img src="img/sh-gr.svg" class="sh-gr">
+            <div id="sh-s-y" style="width:93px; height:93px;"></div>
+            <div id="email" style="width:198px; height:45px;"></div>
+            <div id="sh-c-p" style="width:152px; height:101px;"></div>
+            <div id="phone" style="width:183px; height:45px;"></div>
+            <div id="sh-c-g" style="width:108px; height:108px;"></div>
             <figure class="parallax__item__imgWrap">
                 <div class="parallax__item__img"></div>
             </figure>
@@ -2074,6 +2076,197 @@
             });
         }
     });
+</script>
+
+<!--home lotti-->
+<script>
+    const tl = gsap.timeline();
+
+tl.call(() => {
+  // 타이핑 애니메이션 시작
+  var animation = lottie.loadAnimation({
+    container: document.getElementById('knowledge'), // HTML 요소
+    renderer: 'svg',  // 'svg', 'canvas', 'html' 중 선택
+    loop: false,       // 반복 재생 여부
+    autoplay: true,   // 자동 재생 여부
+    path: 'knowledge.json' // 에펙에서 익스포트한 JSON 파일 경로
+  });
+})
+.call(() => {
+  // 바운딩 박스 애니메이션 시작
+  var animation = lottie.loadAnimation({
+    container: document.getElementById('design-certificate'), 
+    renderer: 'svg',  
+    loop: false,       
+    autoplay: true,   
+    path: 'data.json' 
+  });
+}, [], "+=1.2"); 
+</script>
+
+<script>
+    var animation = lottie.loadAnimation({
+    container: document.getElementById('uiux'), 
+    renderer: 'svg',  
+    loop: true,      
+    autoplay: true,  
+    path: 'uiux.json' 
+  });
+
+  var animation = lottie.loadAnimation({
+    container: document.getElementById('flower'), 
+    renderer: 'svg',  
+    loop: true,       
+    autoplay: true,   
+    path: 'flowerelement.json'
+  });
+
+  var animation = lottie.loadAnimation({
+    container: document.getElementById('creativity'), 
+    renderer: 'svg',  
+    loop: true,       
+    autoplay: true,   
+    path: 'creativity.json'
+  });
+
+  var animation = lottie.loadAnimation({
+    container: document.getElementById('sh-g'), 
+    renderer: 'svg',  
+    loop: true,       
+    autoplay: true,  
+    path: 'sh-g.json' 
+  });
+
+  var animation = lottie.loadAnimation({
+    container: document.getElementById('sh-b'), 
+    renderer: 'svg',  
+    loop: true,       
+    autoplay: true,   
+    path: 'sh-b.json' 
+  });
+
+  var animation = lottie.loadAnimation({
+    container: document.getElementById('design-text'), 
+    renderer: 'svg',  
+    loop: true,      
+    autoplay: true,  
+    path: 'design-text.json' 
+  });
+
+  var animation = lottie.loadAnimation({
+    container: document.getElementById('sh-sb'), 
+    renderer: 'svg',  
+    loop: true,       
+    autoplay: true,   
+    path: 'sh-sb.json' 
+  });
+
+  var animation = lottie.loadAnimation({
+    container: document.getElementById('sh-o'), 
+    renderer: 'svg', 
+    loop: true,       
+    autoplay: true,   
+    path: 'sh-o.json' 
+  });
+
+  var animation = lottie.loadAnimation({
+    container: document.getElementById('sh-y'), 
+    renderer: 'svg',  
+    loop: true,      
+    autoplay: true,   
+    path: 'sh-y.json' 
+  });
+
+  var animation = lottie.loadAnimation({
+    container: document.getElementById('webdesign'), 
+    renderer: 'svg', 
+    loop: true,       
+    autoplay: true,  
+    path: 'webdesign.json' 
+  });
+
+  var animation = lottie.loadAnimation({
+    container: document.getElementById('sh-l'), 
+    renderer: 'svg', 
+    loop: true,      
+    autoplay: true,  
+    path: 'circle.json' 
+  });
+</script>
+
+<!--contact lotti-->
+<script>
+var animation = lottie.loadAnimation({
+    container: document.getElementById('star'), 
+    renderer: 'svg', 
+    loop: true,      
+    autoplay: true,  
+    path: 'star.json' 
+  });
+
+  var animation = lottie.loadAnimation({
+    container: document.getElementById('web-design1'), 
+    renderer: 'svg', 
+    loop: true,      
+    autoplay: true,  
+    path: 'web-design1.json' 
+  });
+
+  var animation = lottie.loadAnimation({
+    container: document.getElementById('sh-s-b'), 
+    renderer: 'svg', 
+    loop: true,      
+    autoplay: true,  
+    path: 'sh-s-b.json' 
+  });
+
+  var animation = lottie.loadAnimation({
+    container: document.getElementById('sh-r'), 
+    renderer: 'svg', 
+    loop: true,      
+    autoplay: true,  
+    path: 'sh-r.json' 
+  });
+
+  var animation = lottie.loadAnimation({
+    container: document.getElementById('sh-s-y'), 
+    renderer: 'svg', 
+    loop: true,      
+    autoplay: true,  
+    path: 'sh-s-y.json' 
+  });
+
+  var animation = lottie.loadAnimation({
+    container: document.getElementById('email'), 
+    renderer: 'svg', 
+    loop: true,      
+    autoplay: true,  
+    path: 'email.json' 
+  });
+
+  var animation = lottie.loadAnimation({
+    container: document.getElementById('sh-c-p'), 
+    renderer: 'svg', 
+    loop: true,      
+    autoplay: true,  
+    path: 'sh-c-p.json' 
+  });
+
+  var animation = lottie.loadAnimation({
+    container: document.getElementById('phone'), 
+    renderer: 'svg', 
+    loop: true,      
+    autoplay: true,  
+    path: 'phone.json' 
+  });
+
+  var animation = lottie.loadAnimation({
+    container: document.getElementById('sh-c-g'), 
+    renderer: 'svg', 
+    loop: true,      
+    autoplay: true,  
+    path: 'sh-c-g.json' 
+  });
 </script>
 </body>
 </html>
