@@ -189,80 +189,66 @@ header{position: relative; z-index: 1000;}
     overflow: hidden;
 }
 .text{
-    position: relative;
+    position: absolute;
+    top:33%;
+    left: 21%;
 }
-.text>h2{
-    font-size: 77px;
-    font-weight: 600;
-    font-family: 'Paperlogy';
-    color:#1F4E79;
-    margin:0;
-}
-.text>h2:first-child{
-    padding:18% 0 0 25%;
-}
-.text>h2:last-child{
-    padding:1% 0 0 44%;
-}
-.text h2>span {
-    color:#3A7BD5;
-} 
 .sh{
     position: absolute;
     bottom:-5%;
     right: 21%;
 }
-.sh-uiux{
+#uiux{
     position: absolute;
     top:33%;
     left: 7%;
 }
-.sh-p{
+#flower{
     position: absolute;
     top:8%;
     left: 18%;
 }
-.sh-cr{
+#creativity{
     position: absolute;
     top:18%;
     left: 37%;
 }
-.sh-g{
+#sh-g{
     position: absolute;
     top:19%;
     right: 37%;
 }
-.sh-b{
+#sh-b{
     position: absolute;
     top:9%;
     right: 14%;
 }
-.sh-design{
+#design-text{
     position: absolute;
     top:42%;
     right: 9%;
 }
-.sh-sb{
+#sh-sb{
     position: absolute;
     bottom:18%;
     left: 10%;
 }
-.sh-o{
+#sh-o{
     position: absolute;
     bottom:39%;
     left: 20%;
 }
-.sh-y{
+#sh-y{
     position: absolute;
     bottom:30%;
     left: 36%;
 }
-.sh-web{
+#webdesign{
     position: absolute;
     bottom:27%;
     right: 34%;
 }
-.sh-l{
+#sh-l{
     position: absolute;
     bottom:14%;
     right: 12%;
@@ -1286,47 +1272,47 @@ font-weight: 500;
     color:#6E7B85;
     margin-left: 16px;
 }
-.sh-yg{
+#star{
     position: absolute;
     top:7%;
     left: 13%;
 }
-.sh-web1{
+#web-design1{
     position: absolute;
     top:22%;
     left: 34%;
 }
-.sh-s-b{
+#sh-s-b{
     position: absolute;
     top:20%;
     right: 28%;
 }
-.sh-r{
+#sh-r{
     position: absolute;
     top:9%;
     right: 10%;
 }
-.sh-s-y{
+#sh-s-y{
     position: absolute;
     bottom:13%;
     left: 13%;
 }
-.sh-email{
+#email{
     position: absolute;
     bottom:46%;
     left: 17%;
 }
-.sh-c-p{
+#sh-c-p{
     position: absolute;
     bottom:21%;
     left: 40%;
 }
-.sh-ph{
+#phone{
     position: absolute;
     bottom:18%;
     right: 21%;
 }
-.sh-gr{
+#sh-c-g{
     position: absolute;
     bottom:40%;
     right: 8%;
