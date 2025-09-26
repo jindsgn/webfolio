@@ -2286,5 +2286,29 @@ var animation = lottie.loadAnimation({
     path: 'sh-c-g.json' 
   });
 </script>
+
+<script>
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+window.addEventListener('pageshow', () => {
+  const nav = performance.getEntriesByType('navigation')[0];
+  const isReloadOrBF = nav && (nav.type === 'reload' || nav.type === 'back_forward');
+
+  if (!isReloadOrBF) return;
+
+  requestAnimationFrame(() => {
+    window.scrollTo(0, 0);
+
+    requestAnimationFrame(() => {
+      window.dispatchEvent(new Event('resize'));
+      if (window.ScrollTrigger && typeof ScrollTrigger.refresh === 'function') {
+        ScrollTrigger.refresh();
+      }
+    });
+  });
+});
+</script>
 </body>
 </html>
