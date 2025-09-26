@@ -495,7 +495,12 @@ header{position: relative; z-index: 1000;}
     top:12%;
     left: 13%;
 }
-.license-text li{font-size: 13px; color:#6E7B85;}
+.license-text li{
+    font-size: 13px; 
+    color:#6E7B85;
+    padding-bottom: 24px;
+}
+.license-text li:last-child{padding-bottom: 0;}
 .license-text li p{
     padding-left: 5px;
     font-size: 16px;
