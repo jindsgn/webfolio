@@ -2077,6 +2077,23 @@
             });
         }
     });
+
+    function openModal(id) {
+    const modal = document.getElementById(id);
+    modal.style.display = "flex";
+
+    // 모달 스크롤 맨 위로 초기화
+    modal.scrollTop = 0;
+    const content = modal.querySelector(".modal-content");
+    if (content) {
+        content.scrollTop = 0;
+    }
+    }
+
+    function closeModal(id) {
+    const modal = document.getElementById(id);
+    modal.style.display = "none";
+    }
 </script>
 
 <!--home lotti-->
