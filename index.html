@@ -160,6 +160,7 @@
                         <div class="license-text">
                             <h3>License</h3>
                             <ul>
+                            <li>&bull; 2025. 09<br><p>GTQ 일러스트 1급</p></li>
                             <li>&bull; 2025. 01<br><p>GTQ 1급</p></li>
                             </ul>
                         </div>
@@ -190,7 +191,7 @@
                 <nav class="tab-navigation">
                     <button class="tab-button active" onclick="switchTab(event, 'all')">ALL</button>
                     <button class="tab-button" onclick="switchTab(event, 'web')">Web</button>
-                    <button class="tab-button" onclick="switchTab(event, 'uiux')">UI/UX</button>
+                    <button class="tab-button" onclick="switchTab(event, 'uiux-tab')">UI/UX</button>
                     <button class="tab-button" onclick="switchTab(event, 'detail')">Detail page</button>
                 </nav>
 
@@ -653,7 +654,7 @@
                         </div>
                     </div>
 
-                    <div id="uiux" class="content-panel">
+                    <div id="uiux-tab" class="content-panel">
                         <div class="project-info">
                             <div class="hover-box box1">
                                 <div class="box-content">
@@ -811,7 +812,7 @@
                         </div>
 
                         <div class="subsection-content">
-                            <h5>Main</h5>
+                            <h5>sub</h5>
                             <img src="img/lunel-proto2.png" alt="프로토타입">
                         </div>
 
@@ -2076,6 +2077,23 @@
             });
         }
     });
+
+    function openModal(id) {
+    const modal = document.getElementById(id);
+    modal.style.display = "flex";
+
+    // 모달 스크롤 맨 위로 초기화
+    modal.scrollTop = 0;
+    const content = modal.querySelector(".modal-content");
+    if (content) {
+        content.scrollTop = 0;
+    }
+    }
+
+    function closeModal(id) {
+    const modal = document.getElementById(id);
+    modal.style.display = "none";
+    }
 </script>
 
 <!--home lotti-->
@@ -2267,6 +2285,30 @@ var animation = lottie.loadAnimation({
     autoplay: true,  
     path: 'sh-c-g.json' 
   });
+</script>
+
+<script>
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+window.addEventListener('pageshow', () => {
+  const nav = performance.getEntriesByType('navigation')[0];
+  const isReloadOrBF = nav && (nav.type === 'reload' || nav.type === 'back_forward');
+
+  if (!isReloadOrBF) return;
+
+  requestAnimationFrame(() => {
+    window.scrollTo(0, 0);
+
+    requestAnimationFrame(() => {
+      window.dispatchEvent(new Event('resize'));
+      if (window.ScrollTrigger && typeof ScrollTrigger.refresh === 'function') {
+        ScrollTrigger.refresh();
+      }
+    });
+  });
+});
 </script>
 </body>
 </html>
